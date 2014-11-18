@@ -4,9 +4,13 @@ This plugin allows you to convert Toolkit variable assignments into Miva's defau
 
 ### For Example
 
+#### This:
 ```
 <mvt:item name="tooltit" param="mvassign|foo|'Bar'" />
-Becomes:
+```
+
+#### Becomes:
+```
 <mvt:assign name="g.foo" value="'Bar'" />
 ```
 

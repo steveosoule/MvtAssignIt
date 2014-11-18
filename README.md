@@ -2,7 +2,7 @@
 
 Sublime Text plugin allows you to convert Toolkit, Toolbelt, and Sebenza Tools variable assignments into Miva's default variable assignments.
 
-[![Demo](/steveosoule/MvtAssignIt/raw/master/assets/demo.gif)](http://recordit.co/CYVE7RaVy6)
+[![Demo](/assets/demo.gif)](http://recordit.co/CYVE7RaVy6)
 
 ### For Example
 

@@ -13,3 +13,7 @@ Becomes
 ```
 <mvt:assign name="g.foo" value="'Bar'" />
 ```
+
+## Installation Instructions
+
+Clone this repo into your Sublime Text Packages directory: `C:\Users\YOUR_USERNAME\AppData\Roaming\Sublime Text 2\Packages`. You should now have a new directory: `C:\Users\YOUR_USERNAME\AppData\Roaming\Sublime Text 2\Packages\MvtAssignIt`

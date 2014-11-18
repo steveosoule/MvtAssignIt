@@ -22,5 +22,5 @@ Clone this repo into your Sublime Text Packages directory: `C:\Users\YOUR_USERNA
 
 1. Select the toolkit item(s)
 2. `ctrl` + `shft` + `p` to bring up the Command Palette
-3. Type in, "MvtAssign It" select it.
+3. Type in, "MvtAssign It" and select it.
 4. Voila, your item has been converted

@@ -40,11 +40,15 @@ class MvtAssignItCommand(sublime_plugin.TextCommand):
     if assign_type not in ['sassign', 'mvassign', 'vassign', 'assign', 'var']:
       return tag
 
+    # prepare global and local variable prefixes,
+    # change l.all_settings to l.settings
     variable = re.sub("^l\.all_settings:", 'l.settings:', variable)
     match = re.match('^[^(l\.|g\.)]', variable)
     variable = 'g.' + variable if match else variable
     value = "'" + value + "'" if assign_type == 'sassign' else value
     value = re.sub("l\.all_settings:", 'l.settings:', value)
+
+    # Output new mvt:assign tag
     new_tag = '<mvt:assign name="%s" value="%s" />' % (variable, value)
 
     return new_tag

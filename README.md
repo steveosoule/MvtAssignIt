@@ -1,6 +1,6 @@
 # MvtAssign It - Sublime Text Plugin
 
-Sublime Text plugin allows you to convert Toolkit, Toolbelt, and Sebenza Tools variable assignments into Miva's default variable assignments.
+Sublime Text plugin allows you to convert Toolkit, Toolbelt, and Sebenza Tools variable assignments into Miva's default mvt:assign.
 
 [![Demo](/assets/demo.gif)](http://recordit.co/CYVE7RaVy6)
 
@@ -41,7 +41,7 @@ Sublime Text plugin allows you to convert Toolkit, Toolbelt, and Sebenza Tools v
 
 ## Installation Instructions
 
-Clone this repo into your Sublime Text Packages directory: `C:\Users\YOUR_USERNAME\AppData\Roaming\Sublime Text 2\Packages`. You should now have a new directory: `C:\Users\YOUR_USERNAME\AppData\Roaming\Sublime Text 2\Packages\MvtAssignIt`
+Clone or unzip this repo into your Sublime Text Packages directory: `C:\Users\YOUR_USERNAME\AppData\Roaming\Sublime Text 2\Packages`. You should now have a new directory: `C:\Users\YOUR_USERNAME\AppData\Roaming\Sublime Text 2\Packages\MvtAssignIt`
 
 ## Usage Instructions
 

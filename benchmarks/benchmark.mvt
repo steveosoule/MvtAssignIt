@@ -1,0 +1,38 @@
+<mvt:if expr="ISNULL g.max">
+	<mvt:assign name="g.max" value="100000" />
+</mvt:if>
+
+<mvt:comment><!-- mvt:assign --></mvt:comment>
+<mvt:if expr="g.type EQ 'mvt' OR g.type EQ 'all'">
+	<mvt:item name="ry_toolbelt" param="benchmark|mvt_assign|start" />
+	<mvt:assign name="g.counter" value="1" />
+	<mvt:while expr="g.counter LT g.max">
+		<mvt:assign name="g.counter" value="g.counter + 1" />
+	</mvt:while>
+	<mvt:item name="ry_toolbelt" param="benchmark|mvt_assign|end" />
+	<mvt:item name="ry_toolbelt" param="benchmark|mvt_assign|show" />
+	<hr>
+</mvt:if>
+
+<mvt:if expr="g.type EQ 'toolkit' OR g.type EQ 'all'">
+	<mvt:comment><!-- toolkit mvassign --></mvt:comment>
+	<mvt:item name="ry_toolbelt" param="benchmark|toolkit_mvassign|start" />
+	<mvt:item name="toolkit" param="mvassign|counter|1" />
+	<mvt:while expr="g.counter LT g.max">
+		<mvt:item name="toolkit" param="mvassign|counter|g.counter + 1" />
+	</mvt:while>
+	<mvt:item name="ry_toolbelt" param="benchmark|toolkit_mvassign|end" />
+	<mvt:item name="ry_toolbelt" param="benchmark|toolkit_mvassign|show" />
+	<hr>
+</mvt:if>
+
+<mvt:if expr="g.type EQ 'toolbelt' OR g.type EQ 'all'">
+	<mvt:comment><!-- toolbelt assign --></mvt:comment>
+	<mvt:item name="ry_toolbelt" param="benchmark|toolbelt_assign|start" />
+	<mvt:item name="ry_toolbelt" param="assign|g.counter|1" />
+	<mvt:while expr="g.counter LT g.max">
+		<mvt:item name="ry_toolbelt" param="assign|g.counter|g.counter + 1" />
+	</mvt:while>
+	<mvt:item name="ry_toolbelt" param="benchmark|toolbelt_assign|end" />
+	<mvt:item name="ry_toolbelt" param="benchmark|toolbelt_assign|show" />
+</mvt:if>

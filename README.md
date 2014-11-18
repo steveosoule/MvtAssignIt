@@ -1,6 +1,6 @@
-# MvtAssign It
+# MvtAssign It - Sublime Text Plugin
 
-This plugin allows you to convert Toolkit variable assignments into Miva's default variable assignments. This works for Toolkit's mvassign, vassign, and sassign
+This Sublime Text plugin allows you to convert Toolkit variable assignments into Miva's default variable assignments. This works for Toolkit's mvassign, vassign, and sassign
 
 ### For Example
 

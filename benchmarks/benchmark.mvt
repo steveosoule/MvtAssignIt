@@ -36,3 +36,15 @@
 	<mvt:item name="ry_toolbelt" param="benchmark|toolbelt_assign|end" />
 	<mvt:item name="ry_toolbelt" param="benchmark|toolbelt_assign|show" />
 </mvt:if>
+
+<mvt:if expr="g.type EQ 'sebenzatools' OR g.type EQ 'all'">
+	<mvt:comment><!-- sebenza tools var --></mvt:comment>
+	<mvt:item name="ry_toolbelt" param="benchmark|sebenzatools_var|start" />
+	<mvt:item name="ry_toolbelt" param="assign|g.counter|1" />
+	<mvt:item name="sebenzatools" param="var|counter|1" />
+	<mvt:while expr="g.counter LT g.max">
+		<mvt:item name="sebenzatools" param="var|counter|g.counter + 1" />
+	</mvt:while>
+	<mvt:item name="ry_toolbelt" param="benchmark|sebenzatools_var|end" />
+	<mvt:item name="ry_toolbelt" param="benchmark|sebenzatools_var|show" />
+</mvt:if>

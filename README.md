@@ -52,7 +52,7 @@ Clone this repo into your Sublime Text Packages directory: `C:\Users\YOUR_USERNA
 
 Simply put, `mvt:assign` is **faster**.
 
-Using the `/benchmarks/benchmark.mvt` code I tested how long it would take to iterate through an `mvt:while` loop for *N* numbers of times. At the maximum recorded number (10,000) `mvt:assign` was roughly **20 seconds faster** than Toolbelt's assign and **25 seconds faste**r than Toolkit's mvassign!
+Using the `/benchmarks/benchmark.mvt` code I tested how long it would take to iterate through an `mvt:while` loop for N numbers of times. At the maximum recorded number (10,000) `mvt:assign` was roughly **20 seconds faster** than Toolbelt's assign and **25 seconds faster** than Toolkit's mvassign!
 
 | Iterations                   | mvt:assign      | Toolkit        | Toolbelt       |
 |------------------------------|-----------------|----------------|----------------|

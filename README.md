@@ -56,14 +56,14 @@ Simply put, `mvt:assign` is **faster**.
 
 Using the `/benchmark/benchmark.mvt` code I tested how long it would take to iterate through an `mvt:while` loop for N numbers of times. At the maximum recorded number (10,000) `mvt:assign` was roughly **20 seconds faster** than Toolbelt's assign and **25 seconds faster** than Toolkit's mvassign!
 
-| Iterations                   | mvt:assign      | Toolkit        | Toolbelt       |
-|------------------------------|-----------------|----------------|----------------|
-| 1                            | 0.000171 sec.   | 0.000574 sec.  | 0.000361 sec.  |
-| 10                           | 0.000164 sec.   | 0.001843 sec.  | 0.001613 sec.  |
-| 100                          | 0.000309 sec.   | 0.022553 sec.  | 0.018862 sec.  |
-| 1,000                        | 0.001952 sec.   | 0.184801 sec.  | 0.135798 sec.  |
-| 10,000                       | 0.021111 sec.   | 1.675808 sec.  | 1.313019 sec.  |
-| 100,000                      | 0.232023 sec.   | 25.186679 sec. | 20.041977 sec. |
-| 1,000,000                    | 1.956414 sec.   | 3000\* sec.     | 3000\* sec.     |
+| Iterations                   | mvt:assign      | Toolkit        | Toolbelt       | Sebenza Tools  |
+|------------------------------|-----------------|----------------|----------------|----------------|
+| 1                            | 0.000171 sec.   | 0.000574 sec.  | 0.000361 sec.  | 0.000945 sec.  |
+| 10                           | 0.000164 sec.   | 0.001843 sec.  | 0.001613 sec.  | 0.002193 sec.  |
+| 100                          | 0.000309 sec.   | 0.022553 sec.  | 0.018862 sec.  | 0.027008 sec.  |
+| 1,000                        | 0.001952 sec.   | 0.184801 sec.  | 0.135798 sec.  | 0.166441 sec.  |
+| 10,000                       | 0.021111 sec.   | 1.675808 sec.  | 1.313019 sec.  | 1.656581 sec.  |
+| 100,000                      | 0.232023 sec.   | 25.186679 sec. | 20.041977 sec. | 21.763862 sec. |
+| 1,000,000                    | 1.956414 sec.   | 3000\* sec.    | 3000\* sec.    | 3000\* sec.
 
 \* 5 min. timeout was reached

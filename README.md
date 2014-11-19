@@ -41,11 +41,13 @@ Sublime Text plugin allows you to convert Toolkit, Toolbelt, and Sebenza Tools v
 
 ## Installation Instructions
 
+<!---
 ### via Package Control
 
 1. `Ctrl` + `Shft` + `P` to bring up the Command Palette
 2. Select the, "Package Control: Install Package" option
 3. Search & select the, "MvtAssign It" package
+-->
 
 ### via GitHub 
 

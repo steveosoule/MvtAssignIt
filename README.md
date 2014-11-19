@@ -26,7 +26,7 @@ Sublime Text plugin allows you to convert Toolkit, Toolbelt, and Sebenza Tools v
 ```
 ## Features
 
-* Use keyboard shortcut: `Crtl` + `m` while tags are selected
+* Use keyboard shortcut: `Ctrl` + `M` while tags are selected
 * Automatically converts `l.all_settings` variable references to `l.settings`
 * Convert multiple items at once
 * Works with Sublime Text 2 & Sublime Text 3
@@ -42,15 +42,13 @@ Sublime Text plugin allows you to convert Toolkit, Toolbelt, and Sebenza Tools v
 
 ## Installation Instructions
 
-<!---
 ### via Package Control
 
 1. `Ctrl` + `Shft` + `P` to bring up the Command Palette
 2. Select the, "Package Control: Install Package" option
 3. Search & select the, "MvtAssign It" package
--->
 
-### via GitHub 
+### via GitHub
 
 1. Clone or unzip this repo into your Sublime Text Packages directory: `C:\Users\YOUR_USERNAME\AppData\Roaming\Sublime Text 2\Packages`.
 2. You should now have a new directory: `C:\Users\YOUR_USERNAME\AppData\Roaming\Sublime Text 2\Packages\MvtAssignIt`
@@ -58,9 +56,8 @@ Sublime Text plugin allows you to convert Toolkit, Toolbelt, and Sebenza Tools v
 ## Usage Instructions
 
 1. Select the toolkit item(s)
-2. `Ctrl` + `Shft` + `P` to bring up the Command Palette
-3. Select the "MvtAssign It" option
-4. Voila, your item has been converted
+2. Use keyboard shortcut `Crtl` + `M` (or `Ctrl` + `Shft` + `P` to bring up the Command Palette and select the "MvtAssign It" option)
+4. Voila, your item has been converted!
 
 ## Why is this important?
 

@@ -41,7 +41,16 @@ Sublime Text plugin allows you to convert Toolkit, Toolbelt, and Sebenza Tools v
 
 ## Installation Instructions
 
-Clone or unzip this repo into your Sublime Text Packages directory: `C:\Users\YOUR_USERNAME\AppData\Roaming\Sublime Text 2\Packages`. You should now have a new directory: `C:\Users\YOUR_USERNAME\AppData\Roaming\Sublime Text 2\Packages\MvtAssignIt`
+## via Package Control
+
+1. `Ctrl` + `Shft` + `P` to bring up the Command Palette
+2. Select the, "Package Control: Install Package" option
+3. Search & select the, "MvtAssign It" package
+
+### via GitHub 
+
+1. Clone or unzip this repo into your Sublime Text Packages directory: `C:\Users\YOUR_USERNAME\AppData\Roaming\Sublime Text 2\Packages`.
+2. You should now have a new directory: `C:\Users\YOUR_USERNAME\AppData\Roaming\Sublime Text 2\Packages\MvtAssignIt`
 
 ## Usage Instructions
 

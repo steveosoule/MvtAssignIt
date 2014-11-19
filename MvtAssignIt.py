@@ -10,35 +10,22 @@ class MvtAssignItCommand(sublime_plugin.TextCommand):
       if not selection.empty():
         tag = self.view.substr(selection)
         new_tag = self.transform_tag( tag );
-        self.view.replace(edit, selection, new_tag)
+        if new_tag:
+          self.view.replace(edit, selection, new_tag)
   def transform_tag(self, tag):
     new_tag = ''
     dom = parseString( re.sub('^<mvt:item', '<mvt_item', tag) )
 
-    # Check item name and get proper params
+    # Check item name and list out params
     item_name = dom.getElementsByTagName('mvt_item')[0].attributes["name"].value
-    if item_name == 'ry_toolbelt':
-      # <mvt:item name="ry_toolbelt" param="assign|g.foo|'bar'" />
-      params = dom.getElementsByTagName('mvt_item')[0].attributes["param"].value
-      params = params.split('|')
-    elif item_name == 'toolkit':
-      # <mvt:item name="toolkit" params="mvassign|foo|'bar'" />
-      params = dom.getElementsByTagName('mvt_item')[0].attributes["params"].value
-      params = params.split('|')
-    elif item_name == 'sebenzatools':
-      # <mvt:item name="sebenzatools" param="var|foo|'bar'" />
-      params = dom.getElementsByTagName('mvt_item')[0].attributes["param"].value
-      params = params.split('|')
-    else:
-      return tag
-
+    params = dom.getElementsByTagName('mvt_item')[0].attributes["param"].value.split('|')
     assign_type = params[0]
     variable = params[1]
     value = params[2]
 
     # Only update the assignment functions
-    if assign_type not in ['sassign', 'mvassign', 'vassign', 'assign', 'var']:
-      return tag
+    if item_name not in ['ry_toolbelt', 'toolkit', 'sebenzatools'] or assign_type not in ['sassign', 'mvassign', 'vassign', 'assign', 'var']:
+      return False
 
     # prepare global and local variable prefixes,
     # change l.all_settings to l.settings

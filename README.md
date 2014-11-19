@@ -9,9 +9,9 @@ Sublime Text plugin allows you to convert Toolkit, Toolbelt, and Sebenza Tools v
 #### This:
 
 ```
-<mvt:item name="toolkit" params="sassign|foo|bar" />
-<mvt:item name="toolkit" params="vassign|foo|l.all_settings:bar" />
-<mvt:item name="toolkit" params="mvassign|foo|'bar' $ '!'" />
+<mvt:item name="toolkit" param="sassign|foo|bar" />
+<mvt:item name="toolkit" param="vassign|foo|l.all_settings:bar" />
+<mvt:item name="toolkit" param="mvassign|foo|'bar' $ '!'" />
 <mvt:item name="ry_toolbelt" param="assign|g.foo|toupper('bar')" />
 <mvt:item name="sebenzatools" param="var|foo|'bar'" />
 ```
@@ -31,9 +31,9 @@ Sublime Text plugin allows you to convert Toolkit, Toolbelt, and Sebenza Tools v
 * Works with Sublime Text 2 & Sublime Text 3
 * Works on:
 	* **Toolkit**
-	    *  sassign `<mvt:item name="toolkit" params="sassign|foo|bar" />`
-	    *  vassign `<mvt:item name="toolkit" params="vassign|foo|l.all_settings:bar" />`
-	    *  mvassign `<mvt:item name="toolkit" params="mvassign|foo|'bar' $ '!'" />`
+	    *  sassign `<mvt:item name="toolkit" param="sassign|foo|bar" />`
+	    *  vassign `<mvt:item name="toolkit" param="vassign|foo|l.all_settings:bar" />`
+	    *  mvassign `<mvt:item name="toolkit" param="mvassign|foo|'bar' $ '!'" />`
     *  **Toolbelt**
         *  assign `<mvt:item name="ry_toolbelt" param="assign|g.foo|'bar'" />`
     *  **Sebenza Tools**

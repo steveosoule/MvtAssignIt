@@ -1,0 +1,3 @@
+[
+  { "keys": ["ctrl+m"], "command": "mvt_assign_it" }
+]

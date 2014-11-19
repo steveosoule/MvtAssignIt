@@ -26,6 +26,7 @@ Sublime Text plugin allows you to convert Toolkit, Toolbelt, and Sebenza Tools v
 ```
 ## Features
 
+* Use keyboard shortcut: `Crtl` + `m` while tags are selected
 * Automatically converts `l.all_settings` variable references to `l.settings`
 * Convert multiple items at once
 * Works with Sublime Text 2 & Sublime Text 3
